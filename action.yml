@@ -3,4 +3,4 @@ name: 'Hello World'
 description: 'Example of a Dockerized GitHub Action'
 runs:
   using: 'docker'
-  image: 'docker://tdonaworth/digest-pinning-poc:2.0'
+  image: 'docker://tdonaworth/digest-pinning-poc:1.0'
