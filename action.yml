@@ -11,6 +11,6 @@ outputs:
     description: 'The time we greeted you'
 runs:
   using: 'docker'
-  image: 'tdonaworth/digest-pinning-poc:1.0'
+  image: 'docker://tdonaworth/digest-pinning-poc:1.0'
   args:
     - ${{ inputs.who-to-greet }}
