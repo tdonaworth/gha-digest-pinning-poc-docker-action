@@ -1,16 +1,6 @@
 # action.yml
 name: 'Hello World'
-description: 'Greet someone and record the time'
-inputs:
-  who-to-greet:  # id of input
-    description: 'Who to greet'
-    required: true
-    default: 'World'
-outputs:
-  time: # id of output
-    description: 'The time we greeted you'
+description: 'Example of a Dockerized GitHub Action'
 runs:
   using: 'docker'
   image: 'docker://tdonaworth/digest-pinning-poc:2.0'
-  args:
-    - ${{ inputs.who-to-greet }}
